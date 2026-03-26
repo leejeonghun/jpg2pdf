@@ -1,10 +1,29 @@
-import imghdr
 from contextlib import contextmanager
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 PDF_DPI = 72
 MONITOR_DPI = 96
+
+
+class imghdr:
+    @staticmethod
+    def what(file):
+        try:
+            with open(file, 'rb') as f:
+                h = f.read(32)
+        except OSError:
+            return None
+                    
+        if not h:
+            return None
+            
+        """Test for JPEG data with JFIF or Exif markers; and raw JPEG."""
+        if h[6:10] in (b'JFIF', b'Exif'):
+            return 'jpeg'
+        elif h[:4] == b'\xff\xd8\xff\xdb':
+            return 'jpeg'            
+        return None
 
 
 class PDFBuilder:
