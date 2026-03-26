@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
-[![Build Status](https://travis-ci.com/leejeonghun/jpg2pdf.svg?token=vPnYhgsqQx6vveRqjzR8&branch=master)](https://travis-ci.com/leejeonghun/jpg2pdf)
+[![CI](https://github.com/leejeonghun/jpg2pdf/actions/workflows/python-publish.yml/badge.svg)](https://github.com/leejeonghun/jpg2pdf/actions/workflows/python-publish.yml)
 [![codecov](https://codecov.io/gh/leejeonghun/jpg2pdf/branch/master/graph/badge.svg?token=PFD5RT6WX4)](https://codecov.io/gh/leejeonghun/jpg2pdf)
 [![PyPI version](https://badge.fury.io/py/jpg2pdf.svg)](https://badge.fury.io/py/jpg2pdf)
 
